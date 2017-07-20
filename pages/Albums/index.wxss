@@ -1,0 +1,6 @@
+/* index.wxss */
+@import '../Tracks/index.wxss';
+.li-item .albumImg{
+  width: 46px;
+  height: 46px;
+}

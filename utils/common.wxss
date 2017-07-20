@@ -1,0 +1,32 @@
+.search{
+  padding: 10px;
+  text-align: center;
+  
+}
+.search-input{
+background-color: #efeff2;
+border-radius: 5px;
+font-size: 13px;
+padding: 4px 0;
+color: #a39e9e;
+
+}
+.search-input .placeholder::before{
+    /*content: url('images/search.png');*/
+    margin-right: 8px;
+}
+.ul-list{
+  padding: 0;
+  margin: 0;
+}
+.ul-list .li-item{
+
+  border-bottom: 1px solid #e5e5e5;
+}
+.ul-list .li-item:last-child{
+  border-bottom: none;
+}
+.ul-list .li-item:active{
+
+background: #f0f0f0;
+}

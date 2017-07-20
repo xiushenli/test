@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <!--<view class="usermotto" bindtap="bindBottemWorld">
+    <text class="user-motto">{{motto}}</text>
+    000000
+  </view>-->
+
+   <view class="group-ul" >
+   <bloack wx:for="{{setting}}">
+     <view class="c-group-li" data-tag="{{item}}" bindtap="arrowClick" >
+       <image src="{{item.imageUrl}}" class="icon"></image>
+       <text class="title">{{item.title}}</text>
+       <image src="../../utils/images/arrow_right.png" class="arrow"></image>
+
+     </view> 
+     <view class="c-devierline"></view>
+    </bloack>
+   </view>
+
+
+
+
+</view>

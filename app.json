@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/second/second",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/Tracks/index",
+    "pages/Player/index",
+    "pages/Albums/index",
+    "pages/Search/search"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "tabBar": {
+    "position": "bottom",
+    "backgroundColor": "#f2f2f2",
+    "selectedColor": "#76adf9",
+    "list": [
+      {
+        "pagePath": "pages/second/second",
+        "text": "听书",
+        "iconPath": "./utils/images/home_page_my_table_online.png",
+        "selectedIconPath": "./utils/images/home_page_my_table_online_normal.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "./utils/images/home_page_my_table_my_normal.png",
+        "selectedIconPath": "./utils/images/home_page_my_table_my_pressed.png"
+      }
+    ]
+  },
+  "debug": true
+}

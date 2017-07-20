@@ -1,0 +1,27 @@
+
+<view class="container">
+
+   
+ <view class="ul-list">
+    <view class="li-item" wx:for="{{model}}" bindtap="trackClick" data-track="{{item}}" data-index="{{index}}" >
+       <view class="message-left">
+          <image class="trackImg" src="{{item.coverMiddle}}"></image>
+       </view>  
+       <view class="message-middle">
+           <view class="title">{{item.title}}</view>
+           <!--<view class="time">你好嘛，我不想说话</view>-->
+       </view>
+       <view class="message-right">
+         <view class="content">{{item.nickname}}</view>
+         <!--<!--<view class="msgCount">12</view>-->
+         <view class="red-point">
+        
+         <!--<image src="../../utils/images/arrow_right.png"></image>-->
+         </view>
+         
+       </view>
+    </view>
+ </view>
+
+
+</view>

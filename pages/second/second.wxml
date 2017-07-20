@@ -1,0 +1,52 @@
+   <view class="search">
+       <view class="search-input" >
+       <input class="placeholder" type="text" placeholder="搜索" bindconfirm="search" bindconfirm="searchClick"/>
+        <!--<view class="placeholder">搜索</view>-->
+       </view>
+    </view>
+<view class="container">
+
+  <view class="swiper-container" wx:if="{{list}}">
+    <swiper class="swiper_box" autoplay="{{autoplay}}" interval="{{interval}}" indicator-dots=" {{true}}">
+     <block wx:for="{{list}}">
+     <swiper-item>
+     <image src="{{item.pic}}" mode="widthFix"></image>
+     </swiper-item>
+     </block>
+    </swiper>
+  </view>
+
+
+<template name="content">
+
+   <view class="goods-content" wx:if="{{list.length>2}}">
+     <view class="head-content">
+        <view class="headTitle">{{title}}</view>
+        <view class="more-btn" wx:if="{{hasMore}}" bindtap="moreClick" data-tagName="{{title}}">更多</view>
+     </view>
+     <view class="good-content">
+
+       <view class="good" wx:for="{{list}}" wx:if="{{index<3}}">
+       <view data-model="{{item}}" bindtap="trackClick"> 
+ <image src="{{item.coverMiddle}}"></image>
+ <view class="title">{{item.title}}</view>
+</view>
+        
+
+       </view>
+     </view>
+    </view>
+
+</template>
+
+<block wx:for="{{categoryContents}}">
+<template is="content" data="{{...item}}"></template>
+</block>
+
+
+
+
+
+</view>
+
+

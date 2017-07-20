@@ -1,0 +1,27 @@
+<!--index.wxml-->
+
+<view class="container">
+
+   
+ <view class="ul-list">
+    <view class="li-item" wx:for="{{model}}" bindtap="albumClick" data-model="{{item}}">
+       <view class="message-left">
+          <image class="albumImg" src="{{item.coverMiddle}}"></image>
+       </view>  
+       <view class="message-middle">
+           <view class="title">{{item.title}}</view>
+
+       </view>
+       <view class="message-right">
+         <view class="content">{{item.trackTitle}}</view>
+    
+         <view class="red-point">
+        
+         </view>
+         
+       </view>
+    </view>
+ </view>
+
+
+</view>
