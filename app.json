@@ -6,8 +6,8 @@
     "pages/Tracks/index",
     "pages/Player/index",
     "pages/Albums/index",
-    "pages/Search/search"
-
+    "pages/Search/search",
+    "pages/moreInfo/moreInfo"
   ],
   "window": {
     "backgroundTextStyle": "light",
