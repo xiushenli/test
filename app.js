@@ -2,11 +2,13 @@
 App({
     onLaunch: function(options) {
 
-
         //调用API从本地缓存中获取数据
         var logs = wx.getStorageSync('logs') || []
         logs.unshift(Date.now())
         wx.setStorageSync('logs', logs)
+          wx.setEnableDebug({
+      enableDebug: true
+    })
     },
     onShow: function() {
         wx.getNetworkType({
@@ -57,9 +59,6 @@ App({
 
         albumsUrl: 'https://mobile.ximalaya.com/mobile/discovery/v1/category/album?calcDimension=hot&categoryId=6&device=android&pageSize=20&status=0&tagName=',
         searchUrl: 'https://search.ximalaya.com/front/v1?condition=relation&core=track&device=iPhone&live=true&paidFilter=false&rows=20&version=5.4.93&kw=',
-        appid: 'wx1a58fa6ec90fa7c2',
-        secret: '2d6343871ab16fb07b717116306cb698',
-        token: 'obK6lmUnkHN-TXC-MgEw22NGzWf57858K9EjZdC0V80S1kYjDA6bdkGHADAq54XWHcHRPKiicfai0NHyRDsG6hsAlu9I47j_ZK8eyS6mJQuVfdxe7b5RYslisGG8Io2qIIMhAJADDH'
 
 
     }

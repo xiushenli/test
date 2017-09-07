@@ -8,10 +8,10 @@ Page({
   trackClick: function (options) {
 
     var track = options.currentTarget.dataset.track;
-if(!track.play_path_32){
-  wx.showModal({
-    title: '提示',
-    content:'抱歉,' + track.title + '不支持播放',
+    if(!track.play_path_32){
+       wx.showModal({
+        title: '提示',
+       content:'抱歉,' + track.title + '不支持播放',
   })
   return;
 }
@@ -113,7 +113,10 @@ wx.setNavigationBarTitle({
         })
       }
     })
-  }
+  },
+  test:function(){
 
+    print("test","women")
+  }
 
 })
